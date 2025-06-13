@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import samosaImg from './assets/samosaImg.png';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -58,7 +59,7 @@ const App = () => {
         <h2>Count: {count}</h2>
       </div>
       <div className='samosa-container'>
-        <img className='samosa' src='./src/assets/samosaImg.png' onClick={updateCount}/>
+        <img className='samosa' src={samosaImg} onClick={updateCount}/>
         {bubbles.map(bubble => (
           <div
             key={bubble.id}
